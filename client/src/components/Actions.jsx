@@ -26,7 +26,9 @@ export default function Actions({ id }) {
   const handleDelete = async () => {
     // alert("Delete Clicked with id", id);
     console.log(id);
-    const res = await fetch("http://localhost:7000/api/blog/delete/"+id, {
+    // const res = await fetch("http://localhost:7000/api/blog/delete/"+id, {
+    const res = await fetch("https://blog-post-three-iota.vercel.app/api/blog/delete/"+id, {
+
       method:"DELETE",
       headers:{
         token: localStorage.getItem("token")

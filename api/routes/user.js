@@ -46,28 +46,6 @@ UserRoutes.post("/register", async (req,res)=>{
 })
 
 
-// LOGIN ROUTE (SIGN IN)
-// UserRoutes.post("/login", async(req,res)=>{
-//     try {
-//         const {email, password} = req.body;
-//         const existUser = await User.findOne({email})
-//         if(!existUser){
-//             res.status(404).json({error:"user not found"})
-//         }
-//         const comparePassword = await bcrypt.compare(password, existUser.password);
-//         if(!comparePassword){
-//             res.status(400).json({msg:"Wrong Password"})
-//         }
-//         const token = jwt.sign({id: existUser._id}, process.env.SECRET)
-
-//         res.status(201).json({msg: "user logged in", token:token})
-
-//     } catch (error) {
-//         res.status(400).json({error:error})
-//     }
-// })
-
-
 
 UserRoutes.post("/login", async (req, res) => {
     try {

@@ -11,8 +11,15 @@ dotenv.config();
 const port = process.env.PORT;
 const app = express();
 
+app.use(cors({
+    // origin: "https://BlogPost.app",
+    origin: "https://blog-post-three-iota.vercel.app/",
+    methods: ["POST", "GET"],
+    credentials: true
+}));
+
 app.use(express.json());
-app.use(cors({credentials: true}));
+// app.use(cors({credentials: true}));
 
 // routes
 app.use("/api/user/", UserRoutes);
@@ -25,13 +32,3 @@ app.listen(port, ()=> {
 })
 
 
-
-
-// app.get("/",(req,res)=>{
-//     res.json({msg: "This is home route"});
-// })
-
-// app.post("/",(req,res)=>{
-//     console.log(req.body);
-//     res.json(req.body)
-// })
