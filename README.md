@@ -1,0 +1,2 @@
+
+Created a dynamic MERN-based blogging platform facilitating seamless blog creation and publication for users. Implemented robust user authentication ensuring personalized account management and heightened data privacy. Leveraged MongoDB to optimize blog management with efficient CRUD operations. Developed a RESTful API, enabling smooth communication between frontend and backend for efficient data transfer. Implemented specialized Middleware to exclusively authorize users for blog update and deletion actions, ensuring stringent data security.
