@@ -33,8 +33,7 @@ function Navbar() {
   useEffect(() => {
     const fetchUser = async () => {
       // const res = await fetch("http://localhost:7000/api/user/auth", {
-      const res = await fetch("https://blog-post-three-iota.vercel.app/api/user/auth", {
-      // const res = await fetch(`${windows.location.origin}/api/user/auth`, {
+      const res = await fetch("https://blog-post-client-umber.vercel.app/api/user/auth", {
         method: "GET",
         headers: {
           token: localStorage.getItem("token"),

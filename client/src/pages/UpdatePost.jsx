@@ -22,7 +22,7 @@ const UpdatePost = () => {
 
   useEffect(() => {
     const fetchSingleBlog = async () => {
-      const res = await fetch(`https://blog-post-three-iota.vercel.app/api/blog/${id}`, {
+      const res = await fetch(`https://blog-post-client-umber.vercel.app/api/blog/${id}`, {
         method: "GET",
         headers: {
           token: localStorage.getItem("token"),
@@ -47,7 +47,7 @@ const UpdatePost = () => {
   const handleSubmit = async () => {
     console.log(blog);
     // const res = await fetch(`http://localhost:7000/api/blog/update/${id}`, {
-    const res = await fetch(`https://blog-post-three-iota.vercel.app/api/blog/update/${id}`, {
+    const res = await fetch(`https://blog-post-client-umber.vercel.app/api/blog/update/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

@@ -20,7 +20,7 @@ const CreatePost = () => {
   const handleSubmit = async () => {
     console.log(blog);
     // const res = await fetch("http://localhost:7000/api/blog/create",{
-    const res = await fetch("https://blog-post-three-iota.vercel.app/api/blog/create",{
+    const res = await fetch("https://blog-post-client-umber.vercel.app/api/blog/create",{
     
       method:"POST",
       headers:{
