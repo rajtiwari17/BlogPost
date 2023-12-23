@@ -13,7 +13,7 @@ const app = express();
 
 app.use(cors({
     // origin: "https://BlogPost.app",
-    origin: "https://blog-post-three-iota.vercel.app/",
+    origin: "https://blog-post-client-umber.vercel.app/",
     methods: ["POST", "GET"],
     credentials: true
 }));
